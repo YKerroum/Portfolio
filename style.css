@@ -12,7 +12,7 @@
 }
 
 #box1 {
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -21,7 +21,7 @@
 }
 
 #box2 {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: baseline;
 }
@@ -30,28 +30,28 @@
   margin-top: 50px;
   width: 220px;
   height: 100px;
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
   line-height: 100%;
-  color: #1A2236;
+  color: #1a2236;
   align-self: center;
 }
 
 #description {
-  margin-top:20px;
+  margin-top: 20px;
   height: 126px;
   width: 288px;
   border-radius: nullpx;
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
   align-self: center;
-  color: #1A2236;
+  color: #1a2236;
 }
 
 #contact {
@@ -60,12 +60,12 @@
   height: 50px;
   left: 16px;
   top: 390px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #FFFFFF;
-  background: #1A2236;
+  color: #fff;
+  background: #1a2236;
 }
