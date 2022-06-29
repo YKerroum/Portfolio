@@ -1,25 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display&display=swap');
+
 * {
   background-color: white;
 }
-#container{
+
+#container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
 }
+
 #box1 {
   display:flex;
   justify-content: space-between;
 }
+
 #nav-bar2 {
   margin: 20px;
 }
-#box2{
+
+#box2 {
   display:flex;
   flex-direction: column;
   align-items: baseline;
 }
+
 #name {
   margin-top: 50px;
   width: 220px;
@@ -32,6 +38,7 @@
   color: #1A2236;
   align-self: center;
 }
+
 #description {
   margin-top:20px;
   height: 126px;
@@ -46,6 +53,7 @@
   align-self: center;
   color: #1A2236;
 }
+
 #contact {
   box-sizing: border-box;
   width: 100%;
