@@ -27,9 +27,9 @@
 }
 
 #name {
-  margin-top: 50px;
-  width: 220px;
-  height: 100px;
+  margin-top: 20px;
+  width: 280px;
+  height: 200px;
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 400;
@@ -40,7 +40,6 @@
 }
 
 #description {
-  margin-top: 20px;
   height: 126px;
   width: 288px;
   border-radius: nullpx;
