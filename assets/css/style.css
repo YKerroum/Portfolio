@@ -8,8 +8,8 @@ body {
   min-height: 100vh;
   width: 100%;
   margin: 0;
-  flex-wrap: wrap;
-  height: 99%;
+  flex-wrap: nowrap;
+  row-gap: 20px;
 }
 
 h1 {
@@ -24,22 +24,16 @@ h1 {
 #box1 {
   display: flex;
   justify-content: space-between;
-  height: 33%;
 }
 
 #nav-bar2 {
   margin: 20px;
 }
 
-#box2, #project-title{
+
+#box2, #project-title, #about, .cards {
   align-self: center;
   width: 90%;
-  height: 33%;
-}
-
-#box3 {
-  margin-top: 30px;
-  height: 33%;
 }
 
 #barrier-pic {
@@ -47,7 +41,7 @@ h1 {
   max-height: 160px;
 }
 
-#description {
+.description {
   border-radius: nullpx;
   font-family: 'Poppins', serif;
   font-style: normal;
@@ -57,8 +51,8 @@ h1 {
   letter-spacing: -0.01em;
 }
 
-#contact {
-  margin-top: 30px;
+.contact {
+  margin-top: 20px;
   width: 100%;
   height: 50px;
   font-family: 'Poppins', serif;
@@ -155,4 +149,15 @@ width: 180px;
 .union {
   width: 20.57px;
   height: 15.35px;
+}
+
+#language {
+width: 289px;
+height: 289px;
+background: #1c528a;
+color: white;
+}
+
+#frameworks {
+
 }
