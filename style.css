@@ -4,11 +4,17 @@
   background-color: white;
 }
 
-#container {
+body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  width: 100%;
+}
+
+#container-head {
+  display: flex;
+  flex-direction: column;
 }
 
 #box1 {
@@ -21,27 +27,21 @@
 }
 
 #box2 {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
+  align-self: center;
+  width: 280px;
+  height: 340px;
 }
 
 #name {
-  margin-top: 20px;
-  width: 280px;
-  height: 200px;
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
-  align-self: center;
 }
 
 #description {
-  height: 126px;
-  width: 288px;
   border-radius: nullpx;
   font-family: 'Poppins', serif;
   font-style: normal;
@@ -49,16 +49,12 @@
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
-  align-self: center;
   color: #1a2236;
 }
 
 #contact {
-  box-sizing: border-box;
   width: 100%;
   height: 50px;
-  left: 16px;
-  top: 390px;
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 500;
