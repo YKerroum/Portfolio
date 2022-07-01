@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
   background-color: white;
@@ -11,35 +12,43 @@ body {
   min-height: 100vh;
   width: 100%;
   margin: 0;
+  flex-wrap: wrap;
+  height: 99%;
 }
 
-#container-head {
-  display: flex;
-  flex-direction: column;
-}
-
-#box1 {
-  display: flex;
-  justify-content: space-between;
-}
-
-#nav-bar2 {
-  margin: 20px;
-}
-
-#box2 {
-  align-self: center;
-  width: 90%;
-  height: 340px;
-}
-
-#name {
+h1 {
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
+}
+  
+#box1 {
+  display: flex;
+  justify-content: space-between;
+  height: 33%;
+}
+
+#nav-bar2 {
+  margin: 20px;
+}
+
+#box2, #project-title{
+  align-self: center;
+  width: 90%;
+  height: 33%;
+}
+
+#box3 {
+  margin-top: 30px;
+  height: 33%;
+}
+
+#barrier-pic {
+  width: 100%;
+  max-height: 160px;
 }
 
 #description {
@@ -65,4 +74,61 @@ body {
   text-align: center;
   color: #fff;
   background: #1a2236;
+}
+
+#works, .work-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-image {
+  width: 100%;
+}
+
+.work-description {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px; 
+  height: 160px;
+  background: #1a2236;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.work-title {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.title-projects {
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 80%;
+}
+
+.work-html {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.work-ruby {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.work-js {
+  grid-area: 2 / 3 / 3 / 4; 
+}
+
+.work-see {
+  grid-area: 3 / 1 / 4 / 3;
+}
+.bouton {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10.3334px;
+  line-height: 80%;
+  color: #1a2236;
 }
