@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
 body {
   display: flex;
@@ -159,5 +161,34 @@ color: white;
 }
 
 #frameworks {
+width: 289px;
+height: 289px;
+background: #e2505c;
+color: white;
+}
 
+#skills {
+width: 289px;
+height: 289px;
+background: #febf52;
+color: white;
+}
+
+.card-list {
+height: 135px;  
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+letter-spacing: -0.0525em;
+}
+
+.card-title {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 30px;
+margin: 40px;
 }
