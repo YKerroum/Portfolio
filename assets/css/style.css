@@ -80,13 +80,23 @@ h1 {
 
 .work-description {
   display: grid;
-  grid-template-columns: 5% repeat(3, 1fr) 5%;
+  grid-template-columns: 5% 1fr 5%;
   grid-template-rows: 5% repeat(3, 1fr) 5%;
-  grid-column-gap: 10px;
+  grid-column-gap: 0;
   grid-row-gap: 0;
   height: 160px;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1px);
+}
+
+.tech-list {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.tech-list li {
+  float: left;
+  padding: 0 10px;
 }
 
 .background-blue {
@@ -98,7 +108,7 @@ h1 {
 }
 
 .work-title {
-  grid-area: 2 / 2 / 3 / 5;
+  grid-area: 2 / 2 / 3 / 3;
 }
 
 .title-projects {
@@ -110,20 +120,12 @@ h1 {
   color: white;
 }
 
-.work-html {
+.work-tech {
   grid-area: 3 / 2 / 4 / 3;
 }
 
-.work-ruby {
-  grid-area: 3 / 3 / 4 / 4;
-}
-
-.work-js {
-  grid-area: 3 / 4 / 4 / 5;
-}
-
 .work-see {
-  grid-area: 4 / 2 / 5 / 5;
+  grid-area: 4 / 2 / 5 / 3;
 }
 
 .bouton {
