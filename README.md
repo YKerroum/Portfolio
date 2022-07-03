@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> Create a naviation bar and description.
+> build a personal portfolio 'Mobile version'.
 
 
 ## Built With
@@ -17,7 +17,7 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-A navigator that support SVG pictures.
+A web browser that can display SVG images.
 ### Usage
 Click on index.html
 ## Author
