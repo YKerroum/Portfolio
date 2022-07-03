@@ -96,8 +96,8 @@ h2 {
   align-items: stretch;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding-left: 0px;
-  margin: 0px;
+  padding-left: 0;
+  margin: 0;
   height: 100%;
 }
 
@@ -149,7 +149,7 @@ h2 {
 
 .bouton-see {
   display: inline-block;
-  text-align: center; 
+  text-align: center;
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 600;
@@ -170,7 +170,7 @@ h2 {
   transition: 0.5s;
 }
 
-.bouton-see span:after {
+.bouton-see span::after {
   content: '\279c';
   position: absolute;
   opacity: 0;
@@ -197,7 +197,7 @@ h2 {
   padding-right: 25px;
 }
 
-.bouton-see:hover span:after {
+.bouton-see:hover span::after {
   opacity: 1;
   right: 0;
 }
