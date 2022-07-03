@@ -14,7 +14,8 @@ body {
   row-gap: 20px;
 }
 
-h1 {
+h1,
+h2 {
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: 400;
@@ -84,19 +85,25 @@ h1 {
   grid-template-rows: 5% repeat(3, 1fr) 5%;
   grid-column-gap: 0;
   grid-row-gap: 0;
-  height: 160px;
+  height: 180px;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1px);
 }
 
 .tech-list {
   list-style-type: none;
-  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 0;
+  height: 100%;
 }
 
 .tech-list li {
-  float: left;
-  padding: 0 10px;
+  height: 100%;
+  width: 100%;
 }
 
 .background-blue {
@@ -135,29 +142,64 @@ h1 {
   font-size: 10.3334px;
   line-height: 80%;
   background-color: #98dede;
-  height: 25px;
-  width: 100%;
+  height: 60%;
+  width: 90%;
+  align-items: center;
 }
 
 .bouton-see {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  display: inline-block;
+  text-align: center;
   font-family: 'Poppins', serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   border: 1px solid white;
   color: white;
   height: 100%;
-  width: 180px;
+  width: 65%;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
-.union {
-  width: 20.57px;
-  height: 15.35px;
+.bouton-see span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bouton-see span::after {
+  content: '\279c';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bouton-see:hover,
+.contact:hover,
+.bouton:hover {
+  background-color: white;
+  border: 1px solid #1a2236;
+  color: #1a2236;
+}
+
+.bouton-see:active,
+.contact:active,
+.bouton:active {
+  border: 2px solid #1a2236;
+}
+
+.bouton-see:hover span {
+  padding-right: 25px;
+}
+
+.bouton-see:hover span::after {
+  opacity: 1;
+  right: 0;
 }
 
 #language {
