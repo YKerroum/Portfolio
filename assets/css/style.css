@@ -171,12 +171,26 @@ h2 {
 }
 
 .bouton-see span:after {
-  content: '\00bb';
+  content: '\279c';
   position: absolute;
   opacity: 0;
   top: 0;
   right: -20px;
   transition: 0.5s;
+}
+
+.bouton-see:hover,
+.contact:hover,
+.bouton:hover {
+  background-color: white;
+  border: 1px solid #1a2236;
+  color: #1a2236;
+}
+
+.bouton-see:active,
+.contact:active,
+.bouton:active {
+  border: 2px solid #1a2236;
 }
 
 .bouton-see:hover span {
