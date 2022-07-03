@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> build a personal portfolio 'Mobile version'.
+> Build a personal portfolio \*Mobile version\*.
 
 
 ## Built With
