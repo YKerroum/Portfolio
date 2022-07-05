@@ -137,19 +137,19 @@
 		<form id="formulaire" action="https://formspree.io/f/mjvlqglq" method="POST">
 			<div class="form-element">
 				<label for="name">Your name: </label>
-				<input maxlength="30" type="text" name="name" required>
+				<input maxlength="30" id="name" type="text" name="name" required>
 			</div>
   			<div class="form-element">
 				<label for="email">Your email: </label>
-				<input type="email" name="email" required>
+				<input type="email" name="email" id="email" required>
 			</div>
   			<div class="form-element">
 				<label for="message">Enter your message here... </label>
-				<textarea rows="6" cols="50" maxlength="500" name="message" required></textarea>
+				<textarea rows="6" cols="50" maxlength="500" id="message" name="message" required></textarea>
 			</div>
   			<input type="submit" value="Start collaboration" class="contact background-blue">
 		</form>
-		<section class="contact-links">
+		<div class="contact-links">
 			<div class="resume">Get My Resume &nbsp;<i class="fa fa-external-link"></i></div>
 			<ul class="social-media-icons">
 				<li class="icon"><i class="fa fa-facebook-official fa-2x"></i></li>
@@ -157,7 +157,7 @@
 				<li class="icon"><i class="fa fa-twitter fa-2x"></i></li>
 				<li class="icon"><i class="fa fa-linkedin-square fa-2x"></i></li>
 			</ul>
-		</section>
+		</div>
 	</footer>
 </body>
 </html>
