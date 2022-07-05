@@ -217,7 +217,7 @@ h2 {
 #skills {
   width: 289px;
   height: 289px;
-  background: #febf52;
+  background-color: #febf52;
   color: white;
 }
 
@@ -292,3 +292,26 @@ h2 {
 #footer-logo {
 align-self: flex-start;
 }
+
+ul  {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-links {
+  background-color: #1A2236;
+  margin-top: 64px;
+}
+
+.contact-links .resume {
+  font-family: 'Poppins';
+  color: #92DCDC;
+  margin: 32px auto auto 16px;
+}
+
+.contact-links .social-media-icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 24px auto;
+}
+
