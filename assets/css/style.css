@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
 body {
@@ -33,10 +34,7 @@ h2 {
   margin: 20px;
 }
 
-#box2,
-#project-title,
-#about,
-.cards {
+.align-center {
   align-self: center;
   width: 90%;
 }
@@ -240,4 +238,57 @@ h2 {
   font-size: 20px;
   line-height: 30px;
   margin: 40px;
+}
+
+#footer-container {
+  background-color: #f9f9fa;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+#formulaire {
+  align-self: center;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.form-element {
+  background: white;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-element input,
+.form-element textarea {
+  border: none;
+  outline: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1a2236;
+  margin: 0px 16px;
+}
+
+.form-element label {
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: #7d7c84;
+  margin: 4px 16px;
+}
+
+#footer-logo {
+align-self: flex-start;
 }
