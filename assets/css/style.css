@@ -293,11 +293,6 @@ h2 {
 align-self: flex-start;
 }
 
-ul  {
-  list-style: none;
-  padding: 0;
-}
-
 .contact-links {
   background-color: #1A2236;
   margin-top: 64px;
@@ -313,5 +308,7 @@ ul  {
   display: flex;
   justify-content: space-around;
   margin: 24px auto;
+  list-style: none;
+  padding: 0;
 }
 
