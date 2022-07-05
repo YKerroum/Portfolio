@@ -266,6 +266,12 @@ h2 {
   flex-direction: column;
 }
 
+.form-element:hover {
+  border: 1px solid #1A2236;
+}
+
+
+
 .form-element input,
 .form-element textarea {
   border: none;
@@ -312,6 +318,12 @@ align-self: flex-start;
   padding: 0;
 }
 
-.social-media-icons .fa{
+.social-media-icons .fa {
   color: white;
+  transition:.5s;
 }
+
+.social-media-icons .fa:hover {
+  transform:scale(1.5);
+}
+
