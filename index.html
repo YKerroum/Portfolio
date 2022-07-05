@@ -11,11 +11,9 @@
 <body>
 	<header id="box1">
 		<img id="nav-bar1" src="./assets/images/back.svg" alt="background picture">
-		<svg id="nav-bar2" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H20V2H0V0ZM0 6.00002H20V8.00002H0V6.00002ZM20 12H0V14H20V12Z" fill="#1A2236"/>
-		</svg>
+		<i class="fa fa-bars" id="nav-bar2" aria-hidden="true"></i>
 	</header>
-	<section id="box2">
+	<section id="box2" class="align-center">
 		<h1 class="name">I'm Youssef<br>Glad to see you!</h1>
 		<p class="description color-blue">Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
 		If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
@@ -26,7 +24,7 @@
 	</div>
 	<section id="works">
 		<div class="work-area">
-			<h2 id="project-title">Projects</h2>
+			<h2 id="project-title" class="align-center">Projects</h2>
 			<img class="work-image" src="./assets/images/project1.svg" alt="Project 1 picture">
 			<div class="work-description background-blue">
 				<div class="work-title">
@@ -93,14 +91,14 @@
 			</div>
 		</div>
 	</section>
-	<section id="about">
+	<section id="about" class="align-center">
 		<h2 class="name">About</h2>
 		<p class="color-blue description">I occasionally take on freelance opportunities.<br>
 		Have an exciting project where you need some help?<br>
 		Send me over a message, and let's chat.</p>
 		<button id="cv" class="contact background-blue" type="button">Get my CV <i class="fa fa-download"></i></button>
 	</section>
-	<section id="language" class="cards">
+	<section id="language" class="cards align-center">
 		<h3 class="card-title">Languages</h3>
 		<ul class="card-list">
 			<li>JavaScript (ES5/ES6)</li>
@@ -109,7 +107,7 @@
 			<li>CSS</li>
 		</ul>
 	</section>
-	<section id="frameworks" class="cards">
+	<section id="frameworks" class="cards align-center">
 		<h3 class="card-title">Frameworks</h3>
 		<ul class="card-list">
 			<li>Bootstrap</li>
@@ -119,7 +117,7 @@
 			<li>Selenium</li>
 		</ul>
 	</section>
-	<section id="skills" class="cards">
+	<section id="skills" class="cards align-center">
 		<h3 class="card-title">Skills</h3>
 		<ul class="card-list">
 			<li>Codekit</li>
@@ -129,5 +127,36 @@
 			<li>Terminal</li>
 		</ul>
 	</section>
+	<footer id="footer-container">
+		<div id="formulaire-head" class="align-center">
+			<h2>Get started</h2>
+			<p class="description color-blue">If you have any questions about my services,
+			or just want to say hello, feel free to contact me.</p>
+		</div>
+		<form id="formulaire" action="https://formspree.io/f/mjvlqglq" method="POST">
+			<div class="form-element">
+				<label for="name">Your name: </label>
+				<input maxlength="30" id="name" type="text" name="name" required>
+			</div>
+  			<div class="form-element">
+				<label for="email">Your email: </label>
+				<input type="email" name="email" id="email" required>
+			</div>
+  			<div class="form-element">
+				<label for="message">Enter your message here... </label>
+				<textarea rows="6" cols="50" maxlength="500" id="message" name="message" required></textarea>
+			</div>
+  			<input type="submit" value="Start collaboration" class="contact background-blue">
+		</form>
+		<div class="contact-links">
+			<div class="resume">Get My Resume &nbsp;<i class="fa fa-external-link"></i></div>
+			<ul class="social-media-icons">
+				<li class="icon"><a href="https://www.facebook.com/ikerroum"><i class="fa fa-facebook-official fa-2x"></i></a></li>
+				<li class="icon"><a href="https://github.com/YKerroum"><i class="fa fa-github fa-2x"></i></a></li>
+				<li class="icon"><a href="https://twitter.com/kerroum_youssef"><i class="fa fa-twitter fa-2x"></i></a></li>
+				<li class="icon"><a href="https://www.linkedin.com/in/ykerroum/"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+			</ul>
+		</div>
+	</footer>
 </body>
 </html>
