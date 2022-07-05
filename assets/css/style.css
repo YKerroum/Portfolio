@@ -267,22 +267,20 @@ h2 {
 }
 
 .form-element:hover {
-  border: 1px solid #1A2236;
+  border: 1px solid #1a2236;
 }
-
-
 
 .form-element input,
 .form-element textarea {
   border: none;
   outline: 0;
-  font-family: 'Poppins';
+  font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #1a2236;
-  margin: 0px 16px;
+  margin: 0 16px;
 }
 
 .form-element label {
@@ -296,7 +294,7 @@ h2 {
 }
 
 #footer-logo {
-align-self: flex-start;
+  align-self: flex-start;
 }
 
 .contact-links {
@@ -320,10 +318,9 @@ align-self: flex-start;
 
 .social-media-icons .fa {
   color: white;
-  transition:.5s;
+  transition: 0.5s;
 }
 
 .social-media-icons .fa:hover {
-  transform:scale(1.5);
+  transform: scale(1.5);
 }
-
