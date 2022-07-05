@@ -307,8 +307,11 @@ align-self: flex-start;
 .contact-links .social-media-icons {
   display: flex;
   justify-content: space-around;
-  margin: 24px auto;
+  margin: 24px;
   list-style: none;
   padding: 0;
 }
 
+.social-media-icons .fa{
+  color: white;
+}
