@@ -242,10 +242,17 @@ h2 {
 
 #footer-container {
   background-color: #f9f9fa;
+  background-image: url(../images/back.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
   width: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+}
+
+#footer-title {
+  margin-top: 30px;
 }
 
 #formulaire {
@@ -258,12 +265,13 @@ h2 {
 }
 
 .form-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background: white;
   border: 1px solid #dfdfe0;
   border-radius: 4px;
   min-height: 60px;
-  display: flex;
-  flex-direction: column;
 }
 
 .form-element:hover {
@@ -280,7 +288,7 @@ h2 {
   font-size: 14px;
   line-height: 21px;
   color: #1a2236;
-  margin: 0 16px;
+  margin-left: 16px;
 }
 
 .form-element label {
@@ -290,7 +298,11 @@ h2 {
   font-size: 10px;
   line-height: 15px;
   color: #7d7c84;
-  margin: 4px 16px;
+  margin-left: 16px;
+}
+
+#formulaire-head {
+  margin-top: 80px;
 }
 
 #footer-logo {
