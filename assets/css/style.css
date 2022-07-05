@@ -294,13 +294,13 @@ align-self: flex-start;
 }
 
 .contact-links {
-  background-color: #1A2236;
+  background-color: #1a2236;
   margin-top: 64px;
 }
 
 .contact-links .resume {
-  font-family: 'Poppins';
-  color: #92DCDC;
+  font-family: 'Poppins', sans-serif;
+  color: #92dcdc;
   margin: 32px auto auto 16px;
 }
 
