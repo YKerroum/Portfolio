@@ -48,17 +48,50 @@ h2 {
   text-decoration: inherit;
 }
 
+#box3 {
+  background-image: url(../images/Barrier.svg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 160px;
+  background-repeat: no-repeat;
+}
+
 .box-menu {
   display: none;
 }
 
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
 @media (min-width: 768px) {
+  .intro-container {
+    flex-direction: row;
+    align-items: stretch;
+    height: 880px;
+    justify-content: center;
+  }
   #box1 {
     box-shadow: 0px 0.5px 0px #DDDFE6;
     justify-content: center;
     align-items: center;
     column-gap: 5%;
     margin: 0px;
+  }
+  #box2 {
+    background-image: url(../images/image_dots.svg);
+    background-position: bottom right;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  #box3 {
+    background-image: url(../images/border.svg);
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
   }
   .box-menu {
     display: block;
@@ -68,6 +101,7 @@ h2 {
   }
   body {
     background-image: none;
+    row-gap: 0px;
   }
   
 }
@@ -79,11 +113,6 @@ h2 {
 .align-center {
   align-self: center;
   width: 90%;
-}
-
-#barrier-pic {
-  width: 100%;
-  max-height: 160px;
 }
 
 .description {
