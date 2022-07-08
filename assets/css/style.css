@@ -19,6 +19,12 @@ body {
 
 .name {
   margin-top: 10px;
+  transition: 1s;
+}
+
+.name:hover {
+  margin-top: 10px;
+  transform: rotate(360deg);
 }
 
 h1,
@@ -540,13 +546,13 @@ background-size: 100% 100%;
   }
 
   #last-container {
-    display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: auto 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
     "background3 project-7"
-    "skills-cards about"; 
+    "skills-cards about";
   grid-area: last-container;
   }
   #background3 {
@@ -559,11 +565,11 @@ background-size: 100% 100%;
   }
   #skills-cards {
     grid-area: skills-cards;
-    display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
     "language frameworks"
     "skills background-card";
   }
