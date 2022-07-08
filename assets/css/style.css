@@ -19,12 +19,6 @@ body {
 
 .name {
   margin-top: 10px;
-  transition: 1s;
-}
-
-.name:hover {
-  margin-top: 10px;
-  transform: rotate(360deg);
 }
 
 h1,
@@ -112,6 +106,7 @@ h2 {
 
 .work-image {
   width: 100%;
+  height: auto;
 }
 
 .work-description {
@@ -243,13 +238,33 @@ h2 {
   height: 289px;
   background: #1c528a;
   color: white;
+  background-image: url(../images/ic_languages.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  }
+#project-6 {
+display:none;
 }
-
+#project-7 {
+display:none;
+}
 #frameworks {
   width: 100%;
   height: 289px;
   background: #e2505c;
   color: white;
+  background-image: url(../images/ic_framework.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+#last-container {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+#skills-cards {
+  width: 70%;
+  align-self: center;
 }
 
 #skills {
@@ -257,6 +272,9 @@ h2 {
   height: 289px;
   background-color: #febf52;
   color: white;
+  background-image: url(../images/ic_skills.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .card-list {
@@ -359,12 +377,9 @@ display: none;}
   margin: 32px auto auto 16px;
 }
 
-.contact-links .social-media-icons {
-  display: flex;
-  justify-content: space-around;
-  margin: 24px;
-  list-style: none;
-  padding: 0;
+.contact-links {
+display: flex;
+flex-direction: column;
 }
 
 .social-media-icons .fa {
@@ -376,12 +391,24 @@ display: none;}
   transform: scale(1.5);
 }
 
+.social-media-icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 24px;
+  list-style: none;
+  padding: 0;
+}
+
 @media (min-width: 768px) {
+  .box-menu:hover, #box1 a.active {
+    border-bottom: 4px solid #1a2236;
+  }
   .intro-container {
     flex-direction: row;
     align-items: stretch;
-    height: 880px;
-    justify-content: center;
+    height: 800px;
+    justify-content: flex-start;
+    margin-bottom: 200px;
   }
 
   #box1 {
@@ -400,10 +427,15 @@ display: none;}
     background-size: 40%;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
   }
 
+  #box2 h1 {
+    margin-top: 80px;
+    margin-bottom: 0px;
+  }
   #box3 {
     background-image: url(../images/border.svg);
     height: 100%;
@@ -446,6 +478,7 @@ display: none;}
       "title first-project"
       "project-container project-container"
       "last-container last-container";
+    margin-bottom: 150px;
   }
 
   #project-title {
@@ -471,14 +504,22 @@ display: none;}
     display: none;
   }
 
-  #project1 {
+  .projects  {
     grid-area: first-project;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
-  #project1:hover ~ .work-description {
+.work-description {
+ width: 100%;
+ transition: .3s ease;
+}
+  .projects:hover .work-description {
     display: grid;
-    grid-area: first-project;
-    align-self: end;
+    position: absolute;
+    bottom: 0;
   }
 
   #project-container {
@@ -543,6 +584,7 @@ background-size: 100% 100%;
 
   #project-6 {
     grid-area: Project-6;
+    display: block;
   }
 
   #last-container {
@@ -562,6 +604,7 @@ background-size: 100% 100%;
   }
   #project-7 {
   grid-area: project-7;
+  display: block;
   }
   #skills-cards {
     grid-area: skills-cards;
@@ -569,6 +612,7 @@ background-size: 100% 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
+  margin-left: 10%;
   grid-template-areas:
     "language frameworks"
     "skills background-card";
@@ -589,6 +633,26 @@ background-size: 100% 100%;
   #about {
     grid-area: about;
   }
-
-
+  #footer-container {
+  background-image: url(../images/footer1.svg), url(../images/footer2.svg);
+  background-position: left top, right bottom;
+  }
+  #formulaire-head {
+  width: 50%;
+  }
+  #formulaire {
+  width: 50%;
+  }
+  .contact-links {
+  flex-direction: row;
+  height: 100px;
+  justify-content: space-around;
+  row-gap: 30px;
+  }
+  .social-media-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin-top: 32px;
+  }
 }
