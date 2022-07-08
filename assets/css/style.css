@@ -233,21 +233,21 @@ h2 {
 }
 
 #language {
-  width: 289px;
+  width: 100%;
   height: 289px;
   background: #1c528a;
   color: white;
 }
 
 #frameworks {
-  width: 289px;
+  width: 100%;
   height: 289px;
   background: #e2505c;
   color: white;
 }
 
 #skills {
-  width: 289px;
+  width: 100%;
   height: 289px;
   background-color: #febf52;
   color: white;
@@ -336,7 +336,8 @@ h2 {
 #formulaire-head {
   margin-top: 80px;
 }
-
+#medium-image {
+display: none;}
 #footer-logo {
   align-self: flex-start;
 }
@@ -433,12 +434,12 @@ h2 {
   #works {
     display: grid;
     grid-template-columns: 0.7fr 1.3fr;
-    grid-template-rows: 1fr 1.4fr 0.6fr;
+    grid-template-rows: auto auto 0.6fr;
     gap: 0 0;
     grid-template-areas:
       "title first-project"
       "project-container project-container"
-      "Last-container Last-container";
+      "last-container last-container";
   }
 
   #project-title {
@@ -485,21 +486,22 @@ h2 {
 
   #second-project {
     grid-area: 1 / 1 / 2 / 2;
+    align-self: end;
   }
 
   #medium-image {
+  display: grid;
     grid-area: 1 / 2 / 2 / 3;
     background-image: url(../images/medium_pic.svg);
     background-repeat: no-repeat;
-    min-width: 510px;
-    min-height: 350px;
+    background-size: 100% 100%;
   }
 
   #second-container {
     display: grid;
     grid-template-columns: 1.5fr 0.5fr 1fr;
     grid-template-rows: 0.9fr 1.1fr;
-    gap: 0 0;
+    gap: 0px 0px;
     grid-template-areas:
       "project-3 . ."
       "project-3 background2 background2";
@@ -512,13 +514,16 @@ h2 {
 
   #background2 {
     grid-area: background2;
+    background-image: url(../images/background3.svg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
   }
 
   #side-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1.1fr 1.1fr 0.8fr;
-    gap: 0 0;
+    gap: 0px 0px;
     grid-template-areas:
       "Project-5"
       "Project-6"
@@ -535,19 +540,49 @@ h2 {
   }
 
   #last-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0 0;
-    grid-template-areas: "skills about";
-    grid-area: Last-container;
+    display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "background3 project-7"
+    "skills-cards about"; 
+  grid-area: last-container;
   }
-
+  #background3 {
+  grid-area: background3;
+  background-image: url(../images/background4.svg);
+  background-repeat: no-repeat;
+  }
+  #project-7 {
+  grid-area: project-7;
+  }
   #skills-cards {
-    grid-area: skills;
+    grid-area: skills-cards;
+    display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "language frameworks"
+    "skills background-card";
+  }
+  #language {
+  grid-area: language;}
+
+  #frameworks {
+  grid-area: frameworks;
+  }
+  #skills {
+  grid-area: skills;
+  }
+  #background-card {
+  grid-area: background-card;
   }
 
   #about {
     grid-area: about;
   }
+
+
 }
