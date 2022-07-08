@@ -241,13 +241,16 @@ h2 {
   background-image: url(../images/ic_languages.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
-  }
+}
+
 #project-6 {
-display:none;
+  display: none;
 }
+
 #project-7 {
-display:none;
+  display: none;
 }
+
 #frameworks {
   width: 100%;
   height: 289px;
@@ -257,11 +260,13 @@ display:none;
   background-repeat: no-repeat;
   background-position: bottom right;
 }
+
 #last-container {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 #skills-cards {
   width: 70%;
   align-self: center;
@@ -360,13 +365,18 @@ justify-content: space-between;
 #formulaire-head {
   margin-top: 80px;
 }
+
 #medium-image {
-display: none;}
+  display: none;
+}
+
 #footer-logo {
   align-self: flex-start;
 }
 
 .contact-links {
+  display: flex;
+  flex-direction: column;
   background-color: #1a2236;
   margin-top: 64px;
 }
@@ -375,11 +385,6 @@ display: none;}
   font-family: 'Poppins', sans-serif;
   color: #92dcdc;
   margin: 32px auto auto 16px;
-}
-
-.contact-links {
-display: flex;
-flex-direction: column;
 }
 
 .social-media-icons .fa {
@@ -400,9 +405,6 @@ flex-direction: column;
 }
 
 @media (min-width: 768px) {
-  .box-menu:hover, #box1 a.active {
-    border-bottom: 4px solid #1a2236;
-  }
   .intro-container {
     flex-direction: row;
     align-items: stretch;
@@ -434,8 +436,9 @@ flex-direction: column;
 
   #box2 h1 {
     margin-top: 80px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
+
   #box3 {
     background-image: url(../images/border.svg);
     height: 100%;
@@ -445,6 +448,11 @@ flex-direction: column;
 
   .box-menu {
     display: block;
+  }
+
+  .box-menu:hover,
+  #box1 a.active {
+    border-bottom: 4px solid #1a2236;
   }
 
   .icon {
@@ -500,11 +508,7 @@ flex-direction: column;
     top: -60px;
   }
 
-  .work-description {
-    display: none;
-  }
-
-  .projects  {
+  .projects {
     grid-area: first-project;
     position: relative;
     display: flex;
@@ -512,10 +516,13 @@ flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-.work-description {
- width: 100%;
- transition: .3s ease;
-}
+
+  .work-description {
+    display: none;
+    width: 100%;
+    transition: 0.3s ease;
+  }
+
   .projects:hover .work-description {
     display: grid;
     position: absolute;
@@ -537,7 +544,7 @@ flex-direction: column;
   }
 
   #medium-image {
-  display: grid;
+    display: grid;
     grid-area: 1 / 2 / 2 / 3;
     background-image: url(../images/medium_pic.svg);
     background-repeat: no-repeat;
@@ -548,7 +555,7 @@ flex-direction: column;
     display: grid;
     grid-template-columns: 1.5fr 0.5fr 1fr;
     grid-template-rows: 0.9fr 1.1fr;
-    gap: 0px 0px;
+    gap: 0 0;
     grid-template-areas:
       "project-3 . ."
       "project-3 background2 background2";
@@ -562,15 +569,15 @@ flex-direction: column;
   #background2 {
     grid-area: background2;
     background-image: url(../images/background3.svg);
-background-repeat: no-repeat;
-background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 
   #side-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1.1fr 1.1fr 0.8fr;
-    gap: 0px 0px;
+    gap: 0 0;
     grid-template-areas:
       "Project-5"
       "Project-6"
@@ -589,70 +596,82 @@ background-size: 100% 100%;
 
   #last-container {
     display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "background3 project-7"
-    "skills-cards about";
-  grid-area: last-container;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0 0;
+    grid-template-areas:
+      "background3 project-7"
+      "skills-cards about";
+    grid-area: last-container;
   }
+
   #background3 {
-  grid-area: background3;
-  background-image: url(../images/background4.svg);
-  background-repeat: no-repeat;
+    grid-area: background3;
+    background-image: url(../images/background4.svg);
+    background-repeat: no-repeat;
   }
+
   #project-7 {
-  grid-area: project-7;
-  display: block;
+    grid-area: project-7;
+    display: block;
   }
+
   #skills-cards {
     grid-area: skills-cards;
     display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  margin-left: 10%;
-  grid-template-areas:
-    "language frameworks"
-    "skills background-card";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0 0;
+    margin-left: 10%;
+    grid-template-areas:
+      "language frameworks"
+      "skills background-card";
   }
+
   #language {
-  grid-area: language;}
+    grid-area: language;
+  }
 
   #frameworks {
-  grid-area: frameworks;
+    grid-area: frameworks;
   }
+
   #skills {
-  grid-area: skills;
+    grid-area: skills;
   }
+
   #background-card {
-  grid-area: background-card;
+    grid-area: background-card;
   }
 
   #about {
     grid-area: about;
   }
+
   #footer-container {
-  background-image: url(../images/footer1.svg), url(../images/footer2.svg);
-  background-position: left top, right bottom;
+    background-image: url(../images/footer1.svg), url(../images/footer2.svg);
+    background-position: left top, right bottom;
   }
+
   #formulaire-head {
-  width: 50%;
+    width: 50%;
   }
+
   #formulaire {
-  width: 50%;
+    width: 50%;
   }
+
   .contact-links {
-  flex-direction: row;
-  height: 100px;
-  justify-content: space-around;
-  row-gap: 30px;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-around;
+    row-gap: 30px;
   }
+
   .social-media-icons {
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
-  margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-top: 32px;
   }
 }
