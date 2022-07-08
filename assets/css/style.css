@@ -653,12 +653,9 @@ h2 {
     background-position: left top, right bottom;
   }
 
-  #formulaire-head {
-    width: 50%;
-  }
-
+  #formulaire-head,
   #formulaire {
-    width: 50%;
+    width: 40%;
   }
 
   .contact-links {
@@ -671,7 +668,11 @@ h2 {
   .social-media-icons {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 20%;
     margin-top: 32px;
+  }
+
+  #formulaire input {
+    align-self: center;
   }
 }
