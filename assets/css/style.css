@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   width: 100%;
   flex-wrap: nowrap;
-  row-gap: 0px;
+  row-gap: 0;
   background-image: url(../images/back.svg);
   background-position: left top;
   background-repeat: no-repeat;
@@ -246,7 +246,7 @@ h2 {
 .projects {
   display: flex;
   flex-direction: column;
-  row-gap: 0px;
+  row-gap: 0;
 }
 
 #project-6 {
