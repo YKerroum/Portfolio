@@ -2,14 +2,15 @@
 
 # Portfolio
 
-> Build a personal portfolio \*Mobile version\*.
+> Build a personal portfolio.
 
 
 ## Built With
 
-- HTML, CSS
+- HTML
+- CSS
 - FIGMA
-
+- GITHUB Pages
 
 ## Getting Started
 
@@ -20,6 +21,9 @@ To get a local copy up and running follow these simple example steps.
 A web browser that can display SVG images.
 ### Usage
 Click on index.html
+
+### Deployment
+[To view this portfolio online, click here.](https://ykerroum.github.io/)
 ## Author
 
 👤 **Author**
@@ -41,6 +45,7 @@ Give a ⭐️ if you like this project!
 
 - Microverse
 - GITHUB Documentation
+- W3C Documentation
 
 ## 📝 License
 
