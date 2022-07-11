@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   width: 100%;
   flex-wrap: nowrap;
-  row-gap: 30px;
+  row-gap: 0px;
   background-image: url(../images/back.svg);
   background-position: left top;
   background-repeat: no-repeat;
@@ -243,6 +243,12 @@ h2 {
   background-position: bottom right;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0px;
+}
+
 #project-6 {
   display: none;
 }
@@ -265,6 +271,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 50px;
 }
 
 #skills-cards {
@@ -301,15 +308,21 @@ h2 {
   margin: 40px;
 }
 
+#footer-icons {
+  height: 100px;
+}
+
 #footer-container {
   background-color: #f9f9fa;
   background-image: url(../images/back.svg);
   background-position: left top;
   background-repeat: no-repeat;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  margin-top: 50px;
 }
 
 #footer-title {
@@ -323,6 +336,7 @@ h2 {
   flex-direction: column;
   row-gap: 10px;
   flex-wrap: nowrap;
+  margin-bottom: 100px;
 }
 
 .form-element {
@@ -378,7 +392,6 @@ h2 {
   display: flex;
   flex-direction: column;
   background-color: #1a2236;
-  margin-top: 64px;
 }
 
 .contact-links .resume {
@@ -651,18 +664,18 @@ h2 {
   #footer-container {
     background-image: url(../images/footer1.svg), url(../images/footer2.svg);
     background-position: left top, right bottom;
+    background-size: 30%;
   }
 
   #formulaire-head,
   #formulaire {
-    width: 40%;
+    width: 30%;
   }
 
   .contact-links {
     flex-direction: row;
     height: 100px;
     justify-content: space-around;
-    row-gap: 30px;
   }
 
   .social-media-icons {
