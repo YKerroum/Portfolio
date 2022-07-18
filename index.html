@@ -6,19 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="./assets/js/script.js"></script>
 	<title>Youssef KERROUM</title>
 </head>
-<body>
+<body onLoad="checkMediaQuery()">
 	<header id="box1">
 		<ul id="menu">
-			<li><a href="#" class="box-menu active">Hello</a></li>
-			<li><a href="#" class="box-menu">Portfolio</a></li>
-			<li><a href="#" class="box-menu">About</a></li>
-			<li><a href="#" class="box-menu">Contact</a></li>
+			<li><a href="#hello" class="box-menu active" onClick="mobileMenuIcon()">Hello</a></li>
+			<li><a href="#works" class="box-menu" onClick="mobileMenuIcon()">Portfolio</a></li>
+			<li><a href="#last-container" class="box-menu" onClick="mobileMenuIcon()">About</a></li>
+			<li><a href="#footer-container" class="box-menu" onClick="mobileMenuIcon()">Contact</a></li>
 		</ul>
-		<a href="#" class="icon"><i class="fa fa-bars fa-lg" id="nav-bar2"></i></a>
+		<a href="#" id="icon"><i class="fa fa-bars fa-lg" id="nav-bar2" onClick="mobileMenuIcon()"></i>
+		</a>
 	</header>
-	<div class="intro-container">
+	<div class="intro-container" id="hello">
 		<section id="box2" class="align-center">
 			<div id="intro-content">
 				<h1 class="name">I'm Youssef<br>Glad to see you!</h1>
@@ -114,6 +116,7 @@
 					<div id="project-6"><img src="./assets/images/project5.svg" alt="project screenshot" /></div>
 	 			</div>
 			</div>
+	</section>
 	<div id="last-container">
 		<div id="background3"></div>
 		<div id="project-7"><img src="./assets/images/project7.svg" alt="project screenshot" /></div>
@@ -157,7 +160,6 @@
 			<div id="background-card"></div>
 		</div>
 	</div>
-	</section>
 	<section id="footer-container">
 		<div id="formulaire-head" class="align-center">
 			<h2>Get started</h2>
