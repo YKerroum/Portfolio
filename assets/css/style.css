@@ -15,7 +15,7 @@ body {
 }
 
 #icon {
-  
+
 }
 
 #menu {
@@ -24,7 +24,7 @@ display: flex;
 }
 
 #box1.activated {
-  height: 100vh;
+  height: 80vh;
   background-image: url(../images/mobile_menu_top.svg), url(../images/mobile_menu_foot.svg);
   background-repeat: no-repeat;
   background-position:top left,bottom left;
@@ -471,7 +471,8 @@ h2 {
   }
 
   #menu {
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
     width: 50%;
   }
 
