@@ -17,6 +17,10 @@ body {
   margin: 0;
 }
 
+#menu {
+list-style-type: none;
+display: flex;
+}
 .name {
   margin-top: 10px;
 }
@@ -432,6 +436,11 @@ h2 {
     align-items: center;
     column-gap: 5%;
     margin: 0;
+  }
+
+  #menu {
+    justify-content: space-evenly;
+    width: 50%;
   }
 
   #box2 {
