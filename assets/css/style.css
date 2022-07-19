@@ -20,7 +20,8 @@ body {
 }
 
 #box1.activated {
-  height: 100vh;
+  height: 60vh;
+  margin-bottom: 40px;
   background-image: url(../images/mobile_menu_top.svg), url(../images/mobile_menu_foot.svg);
   background-repeat: no-repeat;
   background-position: top left, bottom left;
@@ -33,8 +34,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 90%;
   width: 100%;
+  margin: 0;
 }
 
 .box-menu {
