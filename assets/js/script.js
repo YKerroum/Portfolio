@@ -3,6 +3,26 @@ const hamburgerIcon = document.querySelector('#nav-bar2');
 const listOfMenu = document.querySelectorAll('.box-menu');
 const container = document.querySelector('#box1');
 const mediaQuery = window.matchMedia('(min-width: 768px)');
+const sections = document.querySelectorAll('.sections');
+const navList = document.querySelectorAll('.box-menu');
+
+window.onscroll = () => {
+  let current = '';
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (window.pageYOffset >= sectionTop - 90) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navList.forEach((li) => {
+    li.classList.remove('active');
+    if (li.classList.contains(current)) {
+      li.classList.add('active');
+    }
+  });
+};
 
 function mobileMenuIcon() {
   if (!mediaQuery.matches) {

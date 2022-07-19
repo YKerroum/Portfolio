@@ -44,7 +44,7 @@ body {
 }
 
 .box-menu:hover,
-#box1 a.active {
+.box-menu.active {
   border-bottom: 4px solid #1a2236;
 }
 
@@ -67,6 +67,11 @@ h2 {
 }
 
 #box1 {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 5;
   display: flex;
   justify-content: flex-end;
   height: 80px;
@@ -458,6 +463,7 @@ h2 {
     height: 800px;
     justify-content: flex-start;
     margin-bottom: 200px;
+    margin-top: 80px;
   }
 
   #box1 {
