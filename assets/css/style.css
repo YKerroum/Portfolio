@@ -105,10 +105,15 @@ h2 {
   flex-direction: column;
 }
 
-.intro-container {
+#hello {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  margin-top: 80px;
+}
+
+#hello.activated {
+  margin-top: 70vh;
 }
 
 .align-center {
@@ -457,7 +462,7 @@ h2 {
 }
 
 @media (min-width: 768px) {
-  .intro-container {
+  #hello {
     flex-direction: row;
     align-items: stretch;
     height: 800px;

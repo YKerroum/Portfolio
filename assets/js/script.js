@@ -5,6 +5,7 @@ const container = document.querySelector('#box1');
 const mediaQuery = window.matchMedia('(min-width: 768px)');
 const sections = document.querySelectorAll('.sections');
 const navList = document.querySelectorAll('.box-menu');
+const topSection = document.querySelector('#hello');
 
 window.onscroll = () => {
   let current = '';
@@ -26,6 +27,7 @@ window.onscroll = () => {
 
 function mobileMenuIcon() {
   if (!mediaQuery.matches) {
+    topSection.classList.toggle('activated');
     container.classList.toggle('activated');
     hamburger.classList.toggle('activated');
     if (hamburgerIcon.className.includes('fa-bars')) {
@@ -44,6 +46,9 @@ document.querySelectorAll('.change-menu').forEach((link) => link.addEventListene
 function resetElements() {
   if (hamburgerIcon.className.includes('fa-times')) {
     hamburgerIcon.className = 'fa fa-bars fa-lg';
+  }
+  if (topSection.className.includes('activated')) {
+    topSection.classList.toggle('activated');
   }
   if (hamburger.className === 'activated') {
     hamburger.classList.toggle('activated');
