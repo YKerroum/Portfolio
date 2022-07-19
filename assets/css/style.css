@@ -20,7 +20,7 @@ body {
 }
 
 #box1.activated {
-  height: 60vh;
+  height: 70vh;
   margin-bottom: 40px;
   background-image: url(../images/mobile_menu_top.svg), url(../images/mobile_menu_foot.svg);
   background-repeat: no-repeat;
