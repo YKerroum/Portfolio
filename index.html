@@ -6,18 +6,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="./assets/js/script.js"></script>
 	<title>Youssef KERROUM</title>
 </head>
-<body onLoad="checkMediaQuery()">
+<body>
 	<header id="box1">
 		<ul id="menu">
-			<li><a href="#hello" class="box-menu active" onClick="mobileMenuIcon()">Hello</a></li>
-			<li><a href="#works" class="box-menu" onClick="mobileMenuIcon()">Portfolio</a></li>
-			<li><a href="#last-container" class="box-menu" onClick="mobileMenuIcon()">About</a></li>
-			<li><a href="#footer-container" class="box-menu" onClick="mobileMenuIcon()">Contact</a></li>
+			<li><a href="#hello" class="change-menu box-menu active">Hello</a></li>
+			<li><a href="#works" class="change-menu box-menu">Portfolio</a></li>
+			<li><a href="#last-container" class="change-menu box-menu">About</a></li>
+			<li><a href="#footer-container" class="change-menu box-menu">Contact</a></li>
 		</ul>
-		<a href="#" id="icon"><i class="fa fa-bars fa-lg" id="nav-bar2" onClick="mobileMenuIcon()"></i>
+		<a href="#" id="icon"><i class="change-menu fa fa-bars fa-lg" id="nav-bar2"></i>
 		</a>
 	</header>
 	<div class="intro-container" id="hello">
@@ -193,5 +192,6 @@
 			</ul>
 		</div>
 	</footer>
+	<script src="./assets/js/script.js"></script>
 </body>
 </html>
