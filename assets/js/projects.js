@@ -55,13 +55,32 @@ const projectList = [
   },
 ];
 const projectsContainersList = document.querySelectorAll('.projects');
+
+let slideIndex = 1;
+
+function showSlides(n) {
+  let ind;
+  const slides = document.getElementsByClassName('mySlides');
+  const dots = document.getElementsByClassName('demo');
+  if (n > slides.length) { slideIndex = 1; }
+  if (n < 1) { slideIndex = slides.length; }
+  for (ind = 0; ind < slides.length; ind += 1) {
+    slides[ind].style.display = 'none';
+  }
+  for (ind = 0; ind < dots.length; ind += 1) {
+    dots[ind].className = dots[ind].className.replace(' activeS', '');
+  }
+  slides[slideIndex - 1].style.display = 'block';
+  dots[slideIndex - 1].className += ' activeS';
+}
+
 function fillPopup(i) {
   const projectPopup = projectList[i];
   document.querySelector('#modal-container').innerHTML = `
  <div id="modal">
      <div id="modal-head"> 
         <div id="modal-close">
-            <i id="Modal-close-button" class="fa fa-times fa-lg"></i>
+            <i id="Modal-close-button" class="fa fa-times fa-lg" onClick="popupClose()"></i>
         </div>
         <div id="modal-top-buttons">
           <div id="modal-title">
@@ -147,6 +166,7 @@ function fillPopup(i) {
         </div>
     </div>
 `;
+  showSlides(slideIndex);
 }
 
 window.onload = () => {
@@ -166,45 +186,29 @@ window.onload = () => {
       </ul>
       </div>
       <div class="work-see">
-          <button class="bouton-see background-blue" type="button"><span>See this project</span><button>
+          <button class="bouton-see background-blue" type="button" onClick="eventListLoad(${index})"><span>See this project</span><button>
       </div>
     </div>
 `;
   });
 };
 
-const closeModal = document.getElementById('modal-close-button');
-closeModal.onclick = () => {
+function popupClose() {
   document.querySelector('#modal-container').classList.toggle('popup');
   document.querySelector('body').classList.toggle('popup');
-};
-
-const popupButton = document.querySelectorAll('.bouton-see');
-popupButton.forEach((button, index) => {
-  button.onclick = () => {
-    document.querySelector('#modal-container').classList.toggle('popup');
-    document.querySelector('body').classList.toggle('popup');
-    fillPopup(index);
-  };
-});
-
-let slideIndex = 1;
-
-function showSlides(n) {
-  let ind;
-  const slides = document.getElementsByClassName('mySlides');
-  const dots = document.getElementsByClassName('demo');
-  if (n > slides.length) { slideIndex = 1; }
-  if (n < 1) { slideIndex = slides.length; }
-  for (ind = 0; ind < slides.length; ind += 1) {
-    slides[ind].style.display = 'none';
-  }
-  for (ind = 0; ind < dots.length; ind += 1) {
-    dots[ind].className = dots[ind].className.replace(' activeS', '');
-  }
-  slides[slideIndex - 1].style.display = 'block';
-  dots[slideIndex - 1].className += ' activeS';
 }
+
+document.querySelector('#Modal-close-button').onclick(popupClose);
+
+function eventListLoad(index1) {
+  document.querySelector('#modal-container').classList.toggle('popup');
+  document.querySelector('body').classList.toggle('popup');
+  fillPopup(index1);
+}
+
+projectsContainersList.forEach((container, index) => {
+  eventListLoad(index);
+});
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -219,5 +223,3 @@ const thumb = document.querySelectorAll('.demo');
 thumb.forEach((image, index) => {
   image.onclick = currentSlide(index + 1);
 });
-
-showSlides(slideIndex);
