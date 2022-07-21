@@ -729,6 +729,8 @@ h2 {
 
   #previous-next button {
     width: 100%;
+    background-color: transparent;
+    border: none;
   }
 
   #hello {
