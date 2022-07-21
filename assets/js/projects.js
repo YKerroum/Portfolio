@@ -61,7 +61,7 @@ function fillPopup(i) {
  <div id="modal">
      <div id="modal-head"> 
         <div id="modal-close">
-            <i class="fa fa-times fa-lg"></i>
+            <i id="Modal-close-button" class="fa fa-times fa-lg"></i>
         </div>
         <div id="modal-top-buttons">
           <div id="modal-title">
@@ -173,7 +173,8 @@ window.onload = () => {
   });
 };
 
-document.querySelector('#modal-close i').onclick = () => {
+const closeModal = document.getElementById('modal-close-button');
+closeModal.onclick = () => {
   document.querySelector('#modal-container').classList.toggle('popup');
   document.querySelector('body').classList.toggle('popup');
 };
@@ -199,10 +200,10 @@ function showSlides(n) {
     slides[ind].style.display = 'none';
   }
   for (ind = 0; ind < dots.length; ind += 1) {
-    dots[ind].className = dots[ind].className.replace(' active', '');
+    dots[ind].className = dots[ind].className.replace(' activeS', '');
   }
   slides[slideIndex - 1].style.display = 'block';
-  dots[slideIndex - 1].className += ' active';
+  dots[slideIndex - 1].className += ' activeS';
 }
 
 function plusSlides(n) {

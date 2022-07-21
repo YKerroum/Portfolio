@@ -213,7 +213,7 @@ color: #1a2236;
   opacity: 0.6;
 }
 
-.active,
+.activeS,
 .demo:hover {
   opacity: 1;
 }
