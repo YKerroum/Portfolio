@@ -9,6 +9,7 @@
 
 - HTML
 - CSS
+- JavaScript
 - FIGMA
 - GITHUB Pages
 

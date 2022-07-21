@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#modal-container {
+  display: none;
+}
+
+#modal-container.popup {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #e5e5e5;
+}
+
+body.popup > :is(header, footer, section, div:not(#modal-container)) {
+  display: none;
+}
