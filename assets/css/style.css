@@ -731,6 +731,8 @@ h2 {
     width: 100%;
     background-color: transparent;
     border: none;
+    color: #1a2236;
+    cursor: pointer;
   }
 
   #hello {
