@@ -1,20 +1,27 @@
+let asignText = '';
+const email = document.querySelector('#email');
+const emailContainer = email.parentNode;
 function makeLowercase() {
-  const getEmail = document.getElementById('email').value;
+  emailContainer.className = 'form-element';
+  document.querySelector('small').innerHTML = '';
+  const getEmail = email.value;
   if (getEmail !== '@') {
-    const asignText = getEmail.toLowerCase();
-    document.getElementById('email').value = asignText;
+    asignText = getEmail.toLowerCase();
   }
 }
 document.querySelector('#email').addEventListener('input', makeLowercase);
-function checkForm() {
-  const email = document.querySelector('#email').value;
-  const lowEmail = email.toLowerCase();
-  if (email === lowEmail) {
-    document.querySelector('.form-element').className = 'form-element success';
-    return true;
+function checkForm(e) {
+  const getEmail = email.value;
+  if (getEmail !== asignText) {
+    e.preventDefault();
+    emailContainer.className = 'form-element error';
+    document.querySelector('small').innerHTML = 'Please type your email address in lowercase. ';
+    email.value = asignText;
+    return false;
   }
-  document.querySelector('small').innerHTML = 'Please type your email address in lowercase. ';
-  return false;
+  emailContainer.className = 'form-element';
+  document.querySelector('.form-element').className = 'form-element success';
+  return true;
 }
 
-document.querySelector('#btn-submit').addEventListener('click', checkForm);
+document.querySelector('#formulaire').addEventListener('submit', checkForm);
