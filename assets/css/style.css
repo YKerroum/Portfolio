@@ -665,22 +665,6 @@ h2 {
   display: none;
 }
 
-#footer-logo {
-  align-self: flex-start;
-}
-
-.contact-links {
-  display: flex;
-  flex-direction: column;
-  background-color: #1a2236;
-}
-
-.contact-links .resume {
-  font-family: 'Poppins', sans-serif;
-  color: #92dcdc;
-  margin: 32px auto auto 16px;
-}
-
 .social-media-icons .fa {
   color: white;
   transition: 0.5s;
