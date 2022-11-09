@@ -24,7 +24,7 @@ A web browser that can display SVG images.
 Click on index.html
 
 ### Deployment
-[To view this portfolio online, click here.](https://ykerroum.github.io/)
+[To view this portfolio online, click here.](https://ykerroum.github.io/Portfolio/)
 ## Author
 
 👤 **Author**
