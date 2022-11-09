@@ -1,11 +1,11 @@
 const projectList = [
   {
-    title: 'My First Project',
-    imageLink: './assets/images/project1.svg',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, vero in. Praesentium reprehenderit aspernatur ea. Tempora delectus reprehenderit provident hic? <br>Quia commodi eum eligendi aut veniam voluptatibus, itaque distinctio, voluptas ducimus corporis repellat libero ipsum accusamus voluptate alias qui aliquid, nemo repellendus non necessitatibus? Tempora qui, nemo reiciendis quaerat sint debitis dolores sed hic assumenda voluptatum id voluptas quia temporibus. Iusto quos quo delectus ex quae, veniam nihil molestiae fugiat ab aspernatur quibusdam dicta esse excepturi corporis, numquam dignissimos cum! Quisquam dignissimos obcaecati optio architecto? Sint, culpa, fugiat vitae et placeat atque amet incidunt consectetur quo nisi, recusandae reiciendis ducimus.',
-    link: { href: '#', value: 'See project' },
-    githubLink: { href: '#', value: 'See Github' },
+    title: 'African Conference on Education 2022',
+    imageLink: './assets/images/ACE2022.jpg',
+    technologies: ['HTML/CSS', 'JavaScript', 'GithubPages'],
+    description: 'That was my first effort, dedicated to a continental event taking place in my country.',
+    link: { href: 'https://ykerroum.github.io/The-1st-African-Conference-on-Education/', value: 'See project' },
+    githubLink: { href: 'https://github.com/YKerroum/The-1st-African-Conference-on-Education', value: 'See Github' },
     demoLink: { href: '#', value: 'See Demo' },
   },
   {
