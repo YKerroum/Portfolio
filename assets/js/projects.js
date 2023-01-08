@@ -1,7 +1,7 @@
 const projectList = [
   {
     title: 'World Population Tracker',
-    imageLink: './assets/images/worldp1.jpg',
+    imageLink: './assets/images/worldp1.JPG',
     technologies: ['ReactJS', 'React-Redux', 'Jest'],
     description: '[World Population Tracker] is a go-to source website for accurate and up-to-date information on the worldwide population.It is an easy-to-use website that offers a wealth of data and insights on population trends and demographics for continents and countries around the world, all presented in a clear and visually engaging format.',
     link: { href: 'https://github.com/YKerroum/World-Population-Tracker', value: 'See project' },
@@ -10,7 +10,7 @@ const projectList = [
   },
   {
     title: 'Space Travel Hub',
-    imageLink: './assets/images/space1.jpg',
+    imageLink: './assets/images/space1.JPG',
     technologies: ['ReactJS', 'React-Redux', 'Jest'],
     description: '🪐Space Travel Hub🪐 is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
     link: { href: 'https://github.com/YKerroum/spaceTravelHub', value: 'See project' },
@@ -29,7 +29,7 @@ const projectList = [
 
   {
     title: 'New movies',
-    imageLink: './assets/images/movi1.jpg',
+    imageLink: './assets/images/movi1.JPG',
     technologies: ['JavaScript', 'BabelJS', 'Webpack'],
     description: "New movies is a website that has two versions (desktop and mobile) and allows users to check the number of movies and interact by giving a like to their favorite movies and checking for other users' comments, as well as adding their own.",
     link: { href: 'https://github.com/YKerroum/New-movies', value: 'See project' },
@@ -38,7 +38,7 @@ const projectList = [
   },
   {
     title: 'Awesome Books',
-    imageLink: './assets/images/awesome1.jpg',
+    imageLink: './assets/images/awesome1.JPG',
     technologies: ['HTML/CSS', 'LuxonJS', 'JavaScript'],
     description: 'This website was an excellent learning experience for me because I used JavaScript to produce and manage approximately 90% of the website, as well as OOP, modules, and local storage. The website allows visitors to see, add, and delete books from a list, as well as provide contact information.',
     link: { href: 'https://github.com/YKerroum/Awesome-Books', value: 'See project' },
@@ -47,7 +47,7 @@ const projectList = [
   },
   {
     title: 'To Do List',
-    imageLink: './assets/images/todo1.jpg',
+    imageLink: './assets/images/todo1.JPG',
     technologies: ['JavaScript', 'Webpack', 'jest'],
     description: 'This is a to-do list website that allows visitors to browse, add, modify, and remove tasks from a list, as well as check a task as finished and clear all completed tasks. I utilized JavaScript with OOP and modules in this project, as well as Jest to test its functionality and Webpack to bundle it and handle dependencies.',
     link: { href: 'https://github.com/YKerroum/To-Do-list', value: 'See project' },
