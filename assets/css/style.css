@@ -236,10 +236,6 @@ body.popup > *:not(#modal-container) {
   display: block;
 }
 
-.name {
-  margin-top: 10px;
-}
-
 h1,
 h2 {
   font-family: 'Playfair Display', serif;
@@ -283,8 +279,7 @@ h2 {
   background-repeat: no-repeat;
 }
 
-#works,
-.work-area {
+#projects-list {
   display: flex;
   flex-direction: column;
 }
@@ -330,6 +325,7 @@ h2 {
   text-align: center;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 
 .work-image {
@@ -515,7 +511,10 @@ h2 {
 .projects {
   display: flex;
   flex-direction: column;
+  width: 100%;
   row-gap: 0;
+  align-self: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0 4px 16px, rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px;
 }
 
 #frameworks {
@@ -526,13 +525,6 @@ h2 {
   background-image: url(../images/ic_framework.svg);
   background-repeat: no-repeat;
   background-position: bottom right;
-}
-
-#last-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 50px;
 }
 
 #skills-cards {
@@ -676,6 +668,7 @@ h2 {
 }
 
 .contact-links .resume {
+  text-decoration: none;
   font-family: 'Poppins', sans-serif;
   color: #92dcdc;
   margin: 32px auto auto 16px;
@@ -696,6 +689,10 @@ h2 {
   margin: 24px;
   list-style: none;
   padding: 0;
+}
+
+.project-title-img {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -772,9 +769,9 @@ h2 {
   #hello {
     flex-direction: row;
     align-items: stretch;
-    height: 800px;
+    height: 90vh;
     justify-content: flex-start;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     margin-top: 80px;
   }
 
@@ -797,7 +794,7 @@ h2 {
     background-position: bottom right;
     width: 100%;
     height: 100%;
-    background-size: 40%;
+    background-size: 25%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -841,46 +838,38 @@ h2 {
   .contact {
     max-width: 254px;
     width: 100%;
+    margin-bottom: 100px;
   }
 
-  #works {
-    display: grid;
-    grid-template-columns: 0.7fr 1.3fr;
-    grid-template-rows: auto auto 0.6fr;
-    gap: 0 0;
-    grid-template-areas:
-      "title first-project"
-      "project-container project-container"
-      "last-container last-container";
-    margin-bottom: 150px;
+  #projects-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(0.05 * 100vh);
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   #project-title {
     position: relative;
-    grid-area: title;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
-    background-image: url(../images/image_dots.svg);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 40%;
+    margin-bottom: 50px;
   }
 
-  #project-title h2 {
-    position: absolute;
-    transform: translateX(-100%) rotate(-90deg);
-    transform-origin: right;
-    left: 80px;
-    top: -60px;
+  .project-title-img {
+    display: inline;
   }
 
   .projects {
-    grid-area: first-project;
     position: relative;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: calc(1.4 / 4 * 100vw);
+    height: calc(2 / 4 * 100vh);
   }
 
   .work-description {
@@ -895,123 +884,22 @@ h2 {
     bottom: 0;
   }
 
-  #project-container {
-    display: grid;
-    grid-auto-flow: row dense;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 0.5fr 1fr;
-    gap: 0 0;
-    grid-area: project-container;
-  }
-
-  #project2 {
-    grid-area: 1 / 1 / 2 / 2;
-    align-self: end;
-  }
-
-  #medium-image {
-    display: grid;
-    grid-area: 1 / 2 / 2 / 3;
-    background-image: url(../images/medium_pic.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
-  #second-container {
-    display: grid;
-    grid-template-columns: 1.5fr 0.5fr 1fr;
-    grid-template-rows: 0.9fr 1.1fr;
-    gap: 0 0;
-    grid-template-areas:
-      "project-3 . ."
-      "project-3 background2 background2";
-    grid-area: 2 / 1 / 4 / 4;
-  }
-
-  #project3 {
-    grid-area: project-3;
-  }
-
-  #background2 {
-    grid-area: background2;
-    background-image: url(../images/background3.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
-  #side-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.1fr 1.1fr 0.8fr;
-    gap: 0 0;
-    grid-template-areas:
-      "Project-5"
-      "Project-6"
-      ".";
-    grid-area: 1 / 3 / 4 / 4;
-  }
-
-  #project4 {
-    grid-area: Project-5;
-  }
-
-  #project5 {
-    grid-area: Project-6;
-    display: block;
-  }
-
-  #last-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
-    gap: 0 0;
-    grid-template-areas:
-      "background3 project-7"
-      "skills-cards about";
-    grid-area: last-container;
-  }
-
-  #background3 {
-    grid-area: background3;
-    background-image: url(../images/background4.svg);
-    background-repeat: no-repeat;
-  }
-
-  #project6 {
-    grid-area: project-7;
-    display: block;
-  }
-
   #skills-cards {
-    grid-area: skills-cards;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0 0;
-    margin-left: 10%;
+    gap: calc(0.05 * 100vh) calc(0.05 * 100vh);
     grid-template-areas:
       "language frameworks"
       "skills background-card";
   }
 
-  #language {
-    grid-area: language;
+  .cards {
+    box-shadow: rgba(17, 17, 26, 0.1) 0 4px 16px, rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px;
   }
 
-  #frameworks {
-    grid-area: frameworks;
-  }
-
-  #skills {
-    grid-area: skills;
-  }
-
-  #background-card {
-    grid-area: background-card;
-  }
-
-  #about {
-    grid-area: about;
+  #works {
+    margin-bottom: 100px;
   }
 
   #footer-container {
@@ -1040,5 +928,17 @@ h2 {
 
   #formulaire input {
     align-self: center;
+  }
+
+  .work-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
