@@ -1,60 +1,61 @@
 const projectList = [
   {
+    title: 'World Population Tracker',
+    imageLink: './assets/images/worldp1.jpg',
+    technologies: ['ReactJS', 'React-Redux', 'Jest'],
+    description: '[World Population Tracker] is a go-to source website for accurate and up-to-date information on the worldwide population.It is an easy-to-use website that offers a wealth of data and insights on population trends and demographics for continents and countries around the world, all presented in a clear and visually engaging format.',
+    link: { href: 'https://github.com/YKerroum/World-Population-Tracker', value: 'See project' },
+    githubLink: { href: 'https://github.com/YKerroum/World-Population-Tracker.git', value: 'See Github' },
+    demoLink: { href: 'https://world-population-tracker.onrender.com/', value: 'See Demo' },
+  },
+  {
+    title: 'Space Travel Hub',
+    imageLink: './assets/images/space1.jpg',
+    technologies: ['ReactJS', 'React-Redux', 'Jest'],
+    description: '🪐Space Travel Hub🪐 is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+    link: { href: 'https://github.com/YKerroum/spaceTravelHub', value: 'See project' },
+    githubLink: { href: 'https://github.com/YKerroum/spaceTravelHub.git', value: 'See Github' },
+    demoLink: { href: 'spacetravelhub.onrender.com/', value: 'See Demo' },
+  },
+  {
     title: 'African Conference on Education 2022',
     imageLink: './assets/images/ACE2022.jpg',
     technologies: ['HTML/CSS', 'JavaScript', 'GithubPages'],
     description: 'That was my first effort, dedicated to a continental event taking place in my country.',
-    link: { href: 'https://ykerroum.github.io/The-1st-African-Conference-on-Education/', value: 'See project' },
-    githubLink: { href: 'https://github.com/YKerroum/The-1st-African-Conference-on-Education', value: 'See Github' },
-    demoLink: { href: '#', value: 'See Demo' },
+    link: { href: 'https://github.com/YKerroum/The-1st-African-Conference-on-Education', value: 'See project' },
+    githubLink: { href: 'https://github.com/YKerroum/The-1st-African-Conference-on-Education.git', value: 'See Github' },
+    demoLink: { href: 'https://ykerroum.github.io/The-1st-African-Conference-on-Education/', value: 'See Demo' },
+  },
+
+  {
+    title: 'New movies',
+    imageLink: './assets/images/movi1.jpg',
+    technologies: ['JavaScript', 'BabelJS', 'Webpack'],
+    description: "New movies is a website that has two versions (desktop and mobile) and allows users to check the number of movies and interact by giving a like to their favorite movies and checking for other users' comments, as well as adding their own.",
+    link: { href: 'https://github.com/YKerroum/New-movies', value: 'See project' },
+    githubLink: { href: 'https://github.com/YKerroum/New-movies.git', value: 'See Github' },
+    demoLink: { href: 'https://ykerroum.github.io/New-movies/dist/', value: 'See Demo' },
   },
   {
-    title: 'My Second Project',
-    imageLink: './assets/images/project2.svg',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, vero in. Praesentium reprehenderit aspernatur ea. Tempora delectus reprehenderit provident hic? Quia commodi eum eligendi aut veniam voluptatibus, itaque distinctio, voluptas ducimus corporis repellat libero ipsum accusamus voluptate alias qui aliquid, nemo repellendus non necessitatibus?  <br> Tempora qui, nemo reiciendis quaerat sint debitis dolores sed hic assumenda voluptatum id voluptas quia temporibus. Iusto quos quo delectus ex quae, veniam nihil molestiae fugiat ab aspernatur quibusdam dicta esse excepturi corporis, numquam dignissimos cum! Quisquam dignissimos obcaecati optio architecto? Sint, culpa, fugiat vitae et placeat atque amet incidunt consectetur quo nisi, recusandae reiciendis ducimus.',
-    link: { href: '#', value: 'See project' },
-    githubLink: { href: '#', value: 'See Github' },
-    demoLink: { href: '#', value: 'See Demo' },
+    title: 'Awesome Books',
+    imageLink: './assets/images/awesome1.jpg',
+    technologies: ['HTML/CSS', 'LuxonJS', 'JavaScript'],
+    description: 'This website was an excellent learning experience for me because I used JavaScript to produce and manage approximately 90% of the website, as well as OOP, modules, and local storage. The website allows visitors to see, add, and delete books from a list, as well as provide contact information.',
+    link: { href: 'https://github.com/YKerroum/Awesome-Books', value: 'See project' },
+    githubLink: { href: 'https://github.com/YKerroum/Awesome-Books.git', value: 'See Github' },
+    demoLink: { href: 'https://ykerroum.github.io/Awesome-Books/', value: 'See Demo' },
   },
   {
-    title: 'My Third Project',
-    imageLink: './assets/images/project3.svg',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, vero in. Praesentium reprehenderit aspernatur ea. Tempora delectus reprehenderit provident hic? Quia commodi eum eligendi aut veniam voluptatibus, itaque distinctio, voluptas ducimus corporis repellat libero ipsum accusamus voluptate alias qui aliquid, nemo repellendus non necessitatibus? Tempora qui, nemo reiciendis quaerat sint debitis dolores sed hic assumenda voluptatum id voluptas quia temporibus. Iusto quos quo delectus ex quae, veniam nihil molestiae fugiat ab aspernatur quibusdam dicta esse excepturi corporis, numquam dignissimos cum! Quisquam dignissimos obcaecati optio architecto? Sint, culpa, fugiat vitae et placeat atque amet incidunt consectetur quo nisi, recusandae reiciendis ducimus.',
-    link: { href: '#', value: 'See project' },
-    githubLink: { href: '#', value: 'See Github' },
-    demoLink: { href: '#', value: 'See Demo' },
-  },
-  {
-    title: 'My Fourth Project',
-    imageLink: './assets/images/project4.svg',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, vero in. Praesentium reprehenderit aspernatur ea. Tempora delectus reprehenderit provident hic? Quia commodi eum eligendi aut veniam voluptatibus, itaque distinctio, voluptas ducimus corporis repellat libero ipsum accusamus voluptate alias qui aliquid, nemo repellendus non necessitatibus? Tempora qui, nemo reiciendis quaerat sint debitis dolores sed hic assumenda voluptatum id voluptas quia temporibus. Iusto quos quo delectus ex quae, veniam nihil molestiae fugiat ab aspernatur quibusdam dicta esse excepturi corporis, numquam dignissimos cum! Quisquam dignissimos obcaecati optio architecto? Sint, culpa, fugiat vitae et placeat atque amet incidunt consectetur quo nisi, recusandae reiciendis ducimus.',
-    link: { href: '#', value: 'See project' },
-    githubLink: { href: '#', value: 'See Github' },
-    demoLink: { href: '#', value: 'See Demo' },
-  },
-  {
-    title: 'My Fifth Project',
-    imageLink: './assets/images/project5.svg',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, vero in. Praesentium reprehenderit aspernatur ea. Tempora delectus reprehenderit provident hic? Quia commodi eum eligendi aut veniam voluptatibus, itaque distinctio, voluptas ducimus corporis repellat libero ipsum accusamus voluptate alias qui aliquid, nemo repellendus non necessitatibus? Tempora qui, nemo reiciendis quaerat sint debitis dolores sed hic assumenda voluptatum id voluptas quia temporibus. Iusto quos quo delectus ex quae, veniam nihil molestiae fugiat ab aspernatur quibusdam dicta esse excepturi corporis, numquam dignissimos cum! Quisquam dignissimos obcaecati optio architecto? Sint, culpa, fugiat vitae et placeat atque amet incidunt consectetur quo nisi, recusandae reiciendis ducimus.',
-    link: { href: '#', value: 'See project' },
-    githubLink: { href: '#', value: 'See Github' },
-    demoLink: { href: '#', value: 'See Demo' },
-  },
-  {
-    title: 'My Sixth Project',
-    imageLink: './assets/images/project7.svg',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, vero in. Praesentium reprehenderit aspernatur ea. Tempora delectus reprehenderit provident hic? Quia commodi eum eligendi aut veniam voluptatibus, itaque distinctio, voluptas ducimus corporis repellat libero ipsum accusamus voluptate alias qui aliquid, nemo repellendus non necessitatibus? Tempora qui, nemo reiciendis quaerat sint debitis dolores sed hic assumenda voluptatum id voluptas quia temporibus. Iusto quos quo delectus ex quae, veniam nihil molestiae fugiat ab aspernatur quibusdam dicta esse excepturi corporis, numquam dignissimos cum! Quisquam dignissimos obcaecati optio architecto? Sint, culpa, fugiat vitae et placeat atque amet incidunt consectetur quo nisi, recusandae reiciendis ducimus.',
-    link: { href: '#', value: 'See project' },
-    githubLink: { href: '#', value: 'See Github' },
-    demoLink: { href: '#', value: 'See Demo' },
+    title: 'To Do List',
+    imageLink: './assets/images/todo1.jpg',
+    technologies: ['JavaScript', 'Webpack', 'jest'],
+    description: 'This is a to-do list website that allows visitors to browse, add, modify, and remove tasks from a list, as well as check a task as finished and clear all completed tasks. I utilized JavaScript with OOP and modules in this project, as well as Jest to test its functionality and Webpack to bundle it and handle dependencies.',
+    link: { href: 'https://github.com/YKerroum/To-Do-list', value: 'See project' },
+    githubLink: { href: 'https://github.com/YKerroum/To-Do-list.git', value: 'See Github' },
+    demoLink: { href: 'https://ykerroum.github.io/To-Do-list/dist/', value: 'See Demo' },
   },
 ];
-const projectsContainersList = document.querySelectorAll('.projects');
+const projectsContainer = document.querySelector('#projects-list');
 
 let slideIndex = 1;
 
@@ -169,11 +170,11 @@ function fillPopup(i) {
   showSlides(slideIndex);
 }
 
-window.onload = () => {
-  fillPopup(0);
+const generateProjectsList = () => {
   projectList.forEach((data, index) => {
-    projectsContainersList[index].innerHTML = `
-    <img class="work-image" src=${data.imageLink} alt="Project ${index + 1} picture">
+    projectsContainer.innerHTML += `
+    <div id="project${index}" class="projects">
+    <img class="work-image" src=${data.imageLink} alt="${data.title}'s picture">
     <div class="work-description background-blue">
       <div class="work-title">
       <h3 class="title-projects">${data.title}</h3>
@@ -189,7 +190,24 @@ window.onload = () => {
           <button class="bouton-see background-blue" type="button" onClick="eventListLoad(${index})"><span>See this project</span><button>
       </div>
     </div>
+  </div>
 `;
+  });
+};
+
+function eventListLoad(index1) {
+  document.querySelector('#modal-container').classList.toggle('popup');
+  document.querySelector('body').classList.toggle('popup');
+  fillPopup(index1);
+}
+
+window.onload = () => {
+  fillPopup(0);
+  projectsContainer.innerHTML = '';
+  generateProjectsList();
+  const projectsContainersList = document.querySelectorAll('.projects');
+  projectsContainersList.forEach((_, index) => {
+    eventListLoad(index);
   });
 };
 
@@ -199,16 +217,6 @@ function popupClose() {
 }
 
 document.querySelector('#Modal-close-button').onclick(popupClose);
-
-function eventListLoad(index1) {
-  document.querySelector('#modal-container').classList.toggle('popup');
-  document.querySelector('body').classList.toggle('popup');
-  fillPopup(index1);
-}
-
-projectsContainersList.forEach((container, index) => {
-  eventListLoad(index);
-});
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
