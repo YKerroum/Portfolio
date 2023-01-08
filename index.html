@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Youssef KERROUM</title>
 </head>
+
 <body>
 	<div id="modal-container">
 	</div>
@@ -15,7 +17,7 @@
 		<ul id="menu">
 			<li><a href="#hello" class="hello change-menu box-menu active">Hello</a></li>
 			<li><a href="#works" class="works change-menu box-menu">Portfolio</a></li>
-			<li><a href="#last-container" class="last-container change-menu box-menu">About</a></li>
+			<li><a href="#about" class="about change-menu box-menu">About</a></li>
 			<li><a href="#footer-container" class="footer-container change-menu box-menu">Contact</a></li>
 		</ul>
 		<a href="#" id="icon"><i class="change-menu fa fa-bars fa-lg" id="nav-bar2"></i>
@@ -25,55 +27,27 @@
 		<section id="box2" class="align-center">
 			<div id="intro-content">
 				<h1 class="name">I'm Youssef<br>Glad to see you!</h1>
-				<p class="description color-blue">Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
+				<p class="description color-blue">Hello! I am a software developer! I can help you build a product,
+					feature or website. Taka a look of my works.
 					If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
-				<input type="button" value="Start collaboration" class="contact background-blue">
+				<a href="#footer-container"><input type="button" value="Start collaboration" class="contact background-blue"></a>
 			</div>
 		</section>
 		<div id="box3"></div>
 	</div>
-	<section class="sections" id="works">
-			<div id="project-title" class="align-center">
-				<h2>Projects</h2>
-			</div>
-			<div id="project1" class="projects">
-			
-			</div> 
-			<div id="project-container">
-			<div id="project2" class="projects">
-			
-				</div> 
-				<div id="medium-image"></div>
-				<div id="second-container">
-						<div id="project3" class="projects">
-			
-					</div>
-					<div id="background2"></div>
-				</div>
-				<div id="side-container">
-					<div id="project4" class="projects">
-						 
-			
-					</div>
-					<div id="project5" class="projects">
-					
-					</div>
-	 			</div>
-			</div>
-	</section>
-	<div class="sections" id="last-container">
-		<div id="background3"></div>
-		<div id="project6" class="projects">
-		
+	<section class="sections align-center" id="works">
+		<div id="project-title">
+			<h2>Projects</h2>
+			<img src="./assets/images/image_dots.svg" class="project-title-img">
 		</div>
-	</div>
-		<section id="about" class="align-center">
-			<h2 class="name">About</h2>
-			<p class="color-blue description">I occasionally take on freelance opportunities.<br>
+		<div id="projects-list"></div>
+	</section>
+	<section id="about" class="align-center sections">
+		<h2 class="name">About</h2>
+		<p class="color-blue description">I occasionally take on freelance opportunities.<br>
 			Have an exciting project where you need some help?<br>
 			Send me over a message, and let's chat.</p>
-			<button id="cv" class="contact background-blue" type="button">Get my CV <i class="fa fa-download"></i></button>
-		</section>
+		<a href="https://docs.google.com/document/d/e/2PACX-1vSzpY-Uze2xzgXUqdogYxnnmMJefsuOVHS1A-vaThmKhD17wNm5Y6CSAW-alf1Np1fm7dI4xGWfM8Pn/pub" target="_blank"><button id="cv" class="contact background-blue" type="button">Get my CV <i class="fa fa-download"></i></button></a>
 		<div id="skills-cards">
 			<section id="language" class="cards align-center">
 				<h3 class="card-title">Languages</h3>
@@ -104,39 +78,41 @@
 					<li>Terminal</li>
 				</ul>
 			</section>
-			<div id="background-card"></div>
-		</div>
+	</section>
 	<section class="sections" id="footer-container">
 		<div id="formulaire-head" class="align-center">
 			<h2>Get started</h2>
 			<p class="description color-blue">If you have any questions about my services,
-			or just want to say hello, feel free to contact me.</p>
+				or just want to say hello, feel free to contact me.</p>
 		</div>
 		<form id="formulaire" action="https://formspree.io/f/mjvlqglq" method="POST">
 			<div class="form-element">
 				<label for="name">Your name: </label>
 				<input maxlength="30" id="name" type="text" name="name" required>
 			</div>
-  			<div class="form-element">
+			<div class="form-element">
 				<label for="email">Your email: </label>
 				<input type="email" name="email" id="email" required>
 			</div>
 			<small></small>
-  			<div class="form-element">
+			<div class="form-element">
 				<label for="message">Enter your message here... </label>
 				<textarea rows="6" cols="50" maxlength="500" id="message" name="message" required></textarea>
 			</div>
-  			<input id="btn-submit" type="submit" value="Start collaboration" class="contact background-blue">
+			<input id="btn-submit" type="submit" value="Start collaboration" class="contact background-blue">
 		</form>
 	</section>
 	<footer id="footer-icons">
 		<div class="contact-links">
-			<div class="resume">Get My Resume &nbsp;<i class="fa fa-external-link"></i></div>
+			<a class="resume" href="https://docs.google.com/document/d/e/2PACX-1vSzpY-Uze2xzgXUqdogYxnnmMJefsuOVHS1A-vaThmKhD17wNm5Y6CSAW-alf1Np1fm7dI4xGWfM8Pn/pub" target="_blank"><div>Get My Resume &nbsp;<i class="fa fa-external-link"></i></div></a>
 			<ul class="social-media-icons">
-				<li class="icons"><a href="https://www.facebook.com/ikerroum"><i class="fa fa-facebook-official fa-2x"></i></a></li>
+				<li class="icons"><a href="https://www.facebook.com/ikerroum"><i
+							class="fa fa-facebook-official fa-2x"></i></a></li>
 				<li class="icons"><a href="https://github.com/YKerroum"><i class="fa fa-github fa-2x"></i></a></li>
-				<li class="icons"><a href="https://twitter.com/kerroum_youssef"><i class="fa fa-twitter fa-2x"></i></a></li>
-				<li class="icons"><a href="https://www.linkedin.com/in/ykerroum/"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+				<li class="icons"><a href="https://twitter.com/kerroum_youssef"><i class="fa fa-twitter fa-2x"></i></a>
+				</li>
+				<li class="icons"><a href="https://www.linkedin.com/in/ykerroum/"><i
+							class="fa fa-linkedin-square fa-2x"></i></a></li>
 			</ul>
 		</div>
 	</footer>
@@ -144,4 +120,5 @@
 	<script src="./assets/js/projects.js"></script>
 	<script src="./assets/js/validation.js"></script>
 </body>
+
 </html>
