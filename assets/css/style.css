@@ -570,7 +570,6 @@ h2 {
 }
 
 .card-list {
-  height: 135px;
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 600;
@@ -585,7 +584,7 @@ h2 {
   font-weight: 800;
   font-size: 20px;
   line-height: 30px;
-  margin: 40px;
+  margin: 20px;
 }
 
 #footer-icons {
