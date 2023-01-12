@@ -202,9 +202,10 @@ function eventListLoad(index1) {
 }
 
 window.onload = () => {
-  fillPopup(0);
-  projectsContainer.innerHTML = '';
-  generateProjectsList();
+  // fillPopup(0);
+  projectsContainer.innerHTML = `<div id="waiting"><div id="html-spinner"></div>
+  <p id="html-para" class="description">Exciting changes are coming to the projects section of my portfolio! While it's under renovation, feel free to check out my other work and be sure to come back soon for an even better showcase of my skills and accomplishments. Trust me, it'll be worth the wait!</p></div>`;
+  // generateProjectsList();
   const projectsContainersList = document.querySelectorAll('.projects');
   projectsContainersList.forEach((_, index) => {
     eventListLoad(index);
