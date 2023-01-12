@@ -245,7 +245,7 @@ body.popup > *:not(#modal-container) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90%;
+  height: 80%;
   width: 100%;
   margin: 0;
 }

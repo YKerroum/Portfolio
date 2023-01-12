@@ -25,6 +25,10 @@ window.onscroll = () => {
   });
 };
 
+window.addEventListener("hashchange", ()=> {
+    window.scrollTo(window.scrollX, window.scrollY - 80);
+});
+
 function mobileMenuIcon() {
   if (!mediaQuery.matches) {
     topSection.classList.toggle('activated');
