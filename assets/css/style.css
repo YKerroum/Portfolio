@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
 body {
   display: flex;
@@ -12,6 +9,36 @@ body {
   flex-wrap: nowrap;
   row-gap: 0;
   margin: 0;
+}
+
+#waiting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#html-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #1a2236;
+  border-top: 4px solid white;
+  border-radius: 50%;
+  transition-property: transform;
+  animation-name: rotate;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#html-para {
+  width: 50%;
+  text-align: center;
 }
 
 #modal-slideshow * {
@@ -218,7 +245,7 @@ body.popup > *:not(#modal-container) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90%;
+  height: 80%;
   width: 100%;
   margin: 0;
 }
@@ -543,7 +570,6 @@ h2 {
 }
 
 .card-list {
-  height: 135px;
   font-family: 'Poppins', serif;
   font-style: normal;
   font-weight: 600;
@@ -558,7 +584,7 @@ h2 {
   font-weight: 800;
   font-size: 20px;
   line-height: 30px;
-  margin: 40px;
+  margin: 20px;
 }
 
 #footer-icons {
@@ -899,6 +925,7 @@ h2 {
   }
 
   #works {
+    min-height: 100vh;
     margin-bottom: 100px;
   }
 
